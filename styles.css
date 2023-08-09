@@ -1,0 +1,33 @@
+body {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+}
+
+.title {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.subtitle {
+  font-weight: 600;
+}
+
+.word-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.word-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 500px;
+}
