@@ -3,46 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
     <title>Chirp Silencer</title>
   </head>
   <body>
     <header>
-      <nav>
-        <a
-          href="https://github.com/Etheonor/chirp-silencer"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img src="/images/github-mark.png" alt="github logo" width="30"
-        /></a>
-      </nav>
+      <h1>Chirp Silencer</h1>
     </header>
     <main>
-      <h1 class="title">Chirp Silencer</h1>
-      <p class="subtitle">Crushing Twitter Noise</p>
-      <p>
-        Welcome to Chirp Silencer – where we're serving up Twitter tranquility
-        on a silver platter! Sick of the noise? So are we. Sayonara to
-        irritating tweets, trolls, and trivialities. With us, you're in control.
-        Pick, click, and mute the madness. Your feed, your rules – because
-        life's too short for Twitter's cacophony.
-      </p>
-      <p>
-        And for all you curious cats wondering where the heck you can mutate
-        words (seriously, they stashed it like pirate treasure in your Twitter
-        settings),
-        <a href="https://twitter.com/settings/muted_keywords"
-          >behold the elusive URL!</a
-        >
-      </p>
-
+      <section class="head-section">
+        <div class="head-section-text">
+          <h2>Crushing Twitter Noise</h2>
+          <p>
+            Tired of all the noise on Twitter / X?
+            <strong>So are we.</strong> With our browser extension, you can
+            easily add dozens of words to your mute list and finally have a
+            readable news feed without the fuss.
+          </p>
+        </div>
+        <div>
+          <img src="images/chirp-logo.svg" alt="Chirp Silencer logo" />
+        </div>
+      </section>
+      <section class="second-section">
+        <script src="https://gist.github.com/Etheonor/95db28aa0c6c2253bbc12f45202bb819.js"></script>
+        <div class="second-section-text">
+          <h2>Store your lists anywhere</h2>
+          <p>
+            We do not collect or store any personal information. Even your lists
+            are yours. Want to store them on <strong>Github Gist</strong> No
+            problem! Prefer <strong>Pastebin</strong>? That's fine too.
+          </p>
+          <p>
+            As long as your lists follow the required syntax and are available,
+            we'll do the rest.
+          </p>
+        </div>
+      </section>
       <hr />
-      <section>
-        <h2>The list</h2>
-        <div class="word-list"></div>
+      <section class="how-to">
+        <h2>How to use Chirp Silencer?</h2>
+        <ol>
+          <li class="download-li">
+            Download the browser extension for
+            <a
+              href="https://chrome.google.com/webstore/detail/chirp-silencer/hfmapnknalalilhipleaejemjckikadp?hl=fr"
+              >Chrome</a
+            >
+            or Firefox
+            <strong> (available soon)</strong>
+            <a
+              href="https://chrome.google.com/webstore/detail/chirp-silencer/hfmapnknalalilhipleaejemjckikadp?hl=fr" class="download-button"
+              ><img
+              src="/images/chrome-extension.png"
+              alt="chrome extension download button"
+              width="250"
+            /></a
+            ></a>
+          </li>
+
+          <li>
+            Click on the browser extension icon, it will lead you to the correct
+            Twitter URL
+          </li>
+          <li>
+            You’ll have a new input and button on this page! Paste the link to
+            your list and click on “Shush!”
+          </li>
+          <li>
+            You’re done! You can now go back to Twitter and enjoy a noise-free
+            timeline
+          </li>
+        </ol>
+      </section>
+
+      <section class="how-to-list">
+        <h2>How can I create a list?</h2>
+        <div>
+<p>
+          You can create a list on any platform that allows you to share text
+          files. We recommend using
+          <a href="https://gist.github.com/">Github Gist</a> or
+          <a href="https://pastebin.com/">Pastebin</a>.
+        </p>
+        <p>
+          Once you have created your list, you can share it with anyone. Just
+          make sure it is public and that it follows the required syntax. You also need to make sure you share the raw version of your list.
+        </p>
+
+        <p>We'll try to simplify the process in future releases and make it possible to use gist/pastebin links directly.</p>
+
+        <h3>What is the required syntax?</h3>
+        <p>Right now, you need to create a JSON array, it should look like this: </p>
+        <pre>
+          <code>
+            [
+              "word1",
+              "word2",
+              "word3"
+            ]
+          </code>
+        </pre>
+        </div>
+        
+
       </section>
     </main>
+    <footer>
+      <p>
+        Made with ❤️ by
+        <a href="https://twitter.com/michael_webdev">Michael</a>
+      </p>
+    </footer>
   </body>
 </html>
