@@ -162,3 +162,12 @@ pre {
   gap: 1rem;
   align-items: center;
 }
+
+.extension-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding: 1rem;
+}
